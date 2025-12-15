@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject: repo:chainguard-demo/images-bite-back-talk:ref:refs/heads/main
+subject: repo:chainguard-demo/prod-container-builds-with-actions:ref:refs/heads/main
 
 permissions:
   checks: write

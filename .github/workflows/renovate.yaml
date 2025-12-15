@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: chainguard-dev/setup-chainctl@be0acd273acf04bfdf91f51198327e719f6af978 # v0.4.0
       with:
-        identity: 45a0c61ea6fd977f050c5fb9ac06a69eed764595/1a0a8e78e15046cd 
+        identity: 45a0c61ea6fd977f050c5fb9ac06a69eed764595/ac1cf98318af16a8
 
     - uses: octo-sts/action@v1.1.0
       id: octo-sts
