@@ -22,7 +22,7 @@ jobs:
       with:
         identity: 45a0c61ea6fd977f050c5fb9ac06a69eed764595/3827402530de6dbf
 
-    - uses: octo-sts/action@v1.1.0
+    - uses: octo-sts/action@8d6ac62df8bd60823d047d41679ba4a179ff57cc # v1.1.0
       id: octo-sts
       with:
         scope: ${{ github.repository }}
@@ -35,7 +35,7 @@ jobs:
         echo "RENOVATE_DOCKER_CGR_DEV_PASSWORD=$RENOVATE_DOCKER_CGR_DEV_PASSWORD" >> $GITHUB_ENV
 
     - name: Run Renovate
-      uses: renovatebot/github-action@v44.0.5
+      uses: renovatebot/github-action@5712c6a41dea6cdf32c72d92a763bd417e6606aa # v44.0.5
       env:
         # LOG_LEVEL: "debug"
         RENOVATE_TOKEN: ${{ steps.octo-sts.outputs.token }}
