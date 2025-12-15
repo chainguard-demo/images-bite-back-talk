@@ -22,7 +22,7 @@ jobs:
       with:
         identity: 45a0c61ea6fd977f050c5fb9ac06a69eed764595/3827402530de6dbf
 
-    - uses: octo-sts/action@8d6ac62df8bd60823d047d41679ba4a179ff57cc # v1.1.0
+    - uses: octo-sts/action@f603d3be9d8dd9871a265776e625a27b00effe05 # v1.1.1
       id: octo-sts
       with:
         scope: ${{ github.repository }}
