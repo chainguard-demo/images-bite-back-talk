@@ -1,5 +1,5 @@
 # For testing versioning of images with private registry
-FROM cgr.dev/chainguard.edu/go:1.25.3@sha256:047395c0c877b00242c8b034e767fcd735759a4f4c3e25e8813ab20d0183bfa6 AS builder
+FROM cgr.dev/chainguard.edu/go:v1.25.5@sha256:f8273aa92db42cb04e0f8920186c7df379198ca222d2b60ac23bf77d90166016 AS builder
 
 WORKDIR /work
 
