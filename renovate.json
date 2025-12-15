@@ -4,7 +4,5 @@
     "config:recommended"
   ],
   "pinDigests": true,
-  "prConcurrentLimit": 0,
-  "branchConcurrentLimit": 0,
   "prHourlyLimit": 0
 }
