@@ -16,7 +16,7 @@ COPY internal /work/internal
 #RUN GOOS=${TARGETOS} GOARCH=${TARGETARCH} CGO_ENABLED=0 go build -o hello ./cmd/server
 RUN CGO_ENABLED=0 xx-go build -o hello ./cmd/server
 
-FROM cgr.dev/chainguard/static:latest@sha256:7bdd9720cefba78e8133c4d03eaaf3f18a25d147d2c8803cc830061e46b6b474
+FROM cgr.dev/chainguard/static:latest@sha256:99a5f826e71115aef9f63368120a6aa518323e052297718e9bf084fb84def93c
 COPY --from=builder /work/hello /hello 
 
 ENTRYPOINT ["/hello"]
