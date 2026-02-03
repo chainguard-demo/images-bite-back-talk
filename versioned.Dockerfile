@@ -9,7 +9,7 @@ COPY internal /work/internal
 
 RUN CGO_ENABLED=0 go build -o hello ./cmd/server
 
-FROM cgr.dev/chainguard/static:latest@sha256:7bdd9720cefba78e8133c4d03eaaf3f18a25d147d2c8803cc830061e46b6b474
+FROM cgr.dev/chainguard/static:latest@sha256:9cef3c6a78264cb7e25923bf1bf7f39476dccbcc993af9f4ffeb191b77a7951e
 COPY --from=builder /work/hello /hello
 
 ENTRYPOINT ["/hello"]
